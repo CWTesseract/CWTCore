@@ -68,7 +68,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {
 }
 ```
 6. Open your CMake project with Visual Studio 2019's `Open Folder` option.
-7. If nessecary, add the `x64-Clang-Release` build configuration according to the article above.
+7. If necessary, add the `x64-Clang-Release` build configuration according to the article above.
     - Note: You can NOT build this in debug mode, as the MSVC-STL adds extra fields that break binary compatibility.
 8. Build.
 
