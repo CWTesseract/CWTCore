@@ -31,8 +31,46 @@ add_library (MyModDLL SHARED "main.cpp")
 target_link_libraries (MyModDLL LINK_PUBLIC CWTCore)
 target_include_directories (MyModDLL PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/CWTCore/include)
 ```
-5.  Use any of the classes int the `CWT` namespace.
+5.  Create your `main.cpp` file.
+```C++
+#include <Windows.h>
+#include "CWTCore.h"
 
+using namespace CWT;
+
+DWORD WINAPI MyFunc(LPVOID lpvParam) 
+{
+	// Wait until cube::Game is initialized.
+	cube::Game* game = nullptr;
+	while (game == nullptr) {
+		game = CWT::GetGamePtr();
+		Sleep(250);
+	}
+
+	// Set the local player HP.
+	game->world->local_player->entity_data.hp = 500;
+
+	return 0;
+}
+
+
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {
+	switch (fdwReason)
+	{
+	case DLL_PROCESS_ATTACH:
+		CreateThread(NULL, 0, MyFunc, 0, 0, NULL);
+	case DLL_THREAD_ATTACH:
+	case DLL_THREAD_DETACH:
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+	return TRUE;
+}
+```
+6. Open your CMake project with Visual Studio 2019's `Open Folder` option.
+7. If nessecary, add the `x64-Clang-Release` build configuration according to the article above.
+    - Note: You can NOT build this in debug mode, as the MSVC-STL adds extra fields that break binary compatibility.
+8. Build.
 
 
 ## FAQ
