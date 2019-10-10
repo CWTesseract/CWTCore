@@ -73,11 +73,11 @@ namespace CWT {
 			int16_t binary_toggles;
 			uint8_t field_11A;
 			uint8_t field_11B;
-			int32_t roll_time;
+			float roll_time;
 			float stun_time;
 			float some_animation_time;
-			int32_t speed_slowed_time;
-			int32_t speed_boosted_time;
+			float speed_slowed_time;
+			float speed_boosted_time;
 			float unk_float_0;
 			int32_t level;
 			int32_t exp;
@@ -93,7 +93,7 @@ namespace CWT {
 			float hp;
 			int32_t field_174;
 			float mp;
-			int32_t stealth;
+			float stealth;
 			int32_t unk_float_1;
 			float current_movement_type_speed;
 			float light_diameter;
