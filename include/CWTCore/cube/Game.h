@@ -16,6 +16,12 @@ namespace CWT {
 
 		class Game {
 		public:
+
+			class KeyInfoMaps {
+				std::map<uint32_t, std::wstring> key_map_1;
+				std::map<uint32_t, std::wstring> key_map_2;
+			};
+
 			virtual ~Game() {}
 
 			Game() {
@@ -33,16 +39,13 @@ namespace CWT {
 			void* gfx_renderer;
 			void* plasma_engine;
 			void* XAudio2_engine;
-			int64_t field_30;
-			int64_t field_38;
-			int64_t field_40;
-			int64_t field_48;
+			KeyInfoMaps key_info_maps;
 			Speech speech;
 			PlasmaHolder plasma_holder;
 			Host host;
 			Client client;
 			int64_t field_1770;
-		
+
 			std::vector<int32_t> some_vector_like_thing; // Unkown data type!
 			//int64_t xxx_start;
 			///int64_t xxx_end;
