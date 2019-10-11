@@ -46,10 +46,8 @@ namespace CWT {
 			uint8_t unk_F8_set_by_packet;
 			uint8_t field_F9;
 			uint8_t field_FA;
-			int64_t unk_map_size_0x48;
-			int64_t field_108;
-			int64_t unk_map_size_0x48_1;
-			int64_t field_118;
+			std::map<void*, void*> unk_map_size_0x48;
+			std::map<void*, void*> unk_map_size_0x48_1;
 			int64_t field_120;
 			int64_t field_128;
 			int64_t field_130;
