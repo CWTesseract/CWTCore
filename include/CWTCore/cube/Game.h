@@ -45,19 +45,11 @@ namespace CWT {
 			Host host;
 			Client client;
 			int64_t field_1770;
-
-			std::vector<int32_t> some_vector_like_thing; // Unkown data type!
-			//int64_t xxx_start;
-			///int64_t xxx_end;
-			///int64_t xxx_cap;
-
-
+			std::vector<Creature*> saved_character_creatures; // Your saved characters, loaded in memory as cube::Creature(s).
 			int64_t field_1790;
 			int64_t field_1798;
 			int64_t field_17A0;
-			int64_t field_17A8;
-			int64_t field_17B0;
-			int64_t field_17B8;
+			std::vector<std::vector<ItemStack>> crafting_menu_inventory;
 			int64_t field_17C0;
 			int64_t field_17C8;
 			int64_t field_17D0;
@@ -80,9 +72,7 @@ namespace CWT {
 			int64_t field_1858;
 			int64_t field_1860;
 			int64_t field_1868;
-			int64_t field_1870;
-			int64_t field_1878;
-			int64_t field_1880;
+			std::vector<std::vector<ItemStack>> some_other_inventory;
 			int64_t field_1888;
 			int64_t field_1890;
 			int64_t field_1898;
@@ -366,7 +356,7 @@ namespace CWT {
 			int64_t field_2248;
 			int64_t field_2250;
 			int32_t field_2258;
-			int32_t field_225C;
+			int32_t currently_active_character_slot;
 			Database characters_db_database;
 			Database some_database_1;
 		};
