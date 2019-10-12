@@ -6,6 +6,7 @@
 #include "CWTCore/cube/Client.h"
 #include "CWTCore/cube/Host.h"
 #include "CWTCore/cube/PlasmaHolder.h"
+#include "CWTCore/cube/ServerUpdateSubpackets.h"
 #include "CWTCore/cube/Speech.h"
 
 namespace CWT {
@@ -102,38 +103,7 @@ namespace CWT {
 			int64_t field_1958;
 			int64_t some_steam_CCallbackImpl_1202_OnP2PSessionRequest;
 			int64_t field_1968;
-			int64_t unk_packet_related_list_0;
-			int64_t unk_packet_related_list_0_count;
-			int64_t unk_packet_related_list_1;
-			int64_t unk_packet_related_list_1_count;
-			int64_t unk_packet_related_list_2;
-			int64_t unk_packet_related_list_2_count;
-			int64_t cube_changes_list;
-			int64_t cube_changes_list_count;
-			int64_t unk_packet_related_list_3;
-			int64_t unk_packet_related_list_3_count;
-			int64_t unk_packet_related_list_4;
-			int64_t unk_packet_related_list_4_count;
-			int64_t unk_packet_related_list_5;
-			int64_t unk_packet_related_list_5_count;
-			int64_t unk_packet_related_list_6_sets_zone_0xF8_to_0;
-			int64_t unk_packet_related_list_6_count;
-			int64_t unk_packet_related_list_7;
-			int64_t unk_packet_related_list_7_count;
-			int64_t unk_packet_related_list_8;
-			int64_t unk_packet_related_list_8_count;
-			int64_t unk_packet_related_list_9;
-			int64_t unk_packet_related_list_9_count;
-			int64_t unk_packet_related_list_10;
-			int64_t unk_packet_related_list_10_count;
-			int64_t unk_packet_related_list_11;
-			int64_t unk_packet_related_list_11_count;
-			int64_t unk_packet_related_list_12;
-			int64_t unk_packet_related_list_12_count;
-			int64_t unk_packet_related_list_13;
-			int64_t unk_packet_related_list_13_count;
-			int64_t unk_packet_related_list_14;
-			int64_t unk_packet_related_list_14_count;
+			ServerUpdateSubpackets some_subpackets_list;
 			bool game_control_states[23];
 			bool virtual_key_states[255];
 			int64_t field_1B88;

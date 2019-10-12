@@ -12,6 +12,7 @@
 #include "cube/Item.h"
 #include "cube/ItemStack.h"
 #include "cube/PlasmaHolder.h"
+#include "cube/ServerUpdateSubpackets.h"
 #include "cube/Speech.h"
 #include "cube/World.h"
 #include "cube/Zone.h"
@@ -29,6 +30,7 @@ assert_size(CWT::cube::Item::ItemCustomization, 0x4);
 assert_size(CWT::cube::Item, 0xA0);
 assert_size(CWT::cube::ItemStack, 0xA4);
 assert_size(CWT::cube::PlasmaHolder, 0x5D0);
+assert_size(CWT::cube::ServerUpdateSubpackets, 0x100);
 assert_size(CWT::cube::Speech, 0xC8);
 assert_size(CWT::cube::World, 0x548);
 assert_size(CWT::cube::World::TimeInfo, 0x38);
@@ -53,7 +55,7 @@ static_assert(offsetof(CWT::cube::Game, speech) == 0x50, "speech");
 static_assert(offsetof(CWT::cube::Game, host) == 0x6E8, "host");
 static_assert(offsetof(CWT::cube::Game, client) == 0xD18, "client");
 static_assert(offsetof(CWT::cube::Game, field_1790) == 0x1790, "field_1790");
-static_assert(offsetof(CWT::cube::Game, unk_packet_related_list_0) == 0x1970, "unk_packet_related_list_0");
+static_assert(offsetof(CWT::cube::Game, some_subpackets_list) == 0x1970, "some_subpackets_list");
 static_assert(offsetof(CWT::cube::Game, cube_game_lock_0) == 0x1C90, "cube_game_lock_0");
 
 

@@ -10,6 +10,7 @@
 #include "CWTCore/common/Vector3.h"
 #include "CWTCore/cube/Database.h"
 #include "CWTCore/cube/ZonePosition.h"
+#include "CWTCore/cube/ServerUpdateSubpackets.h"
 
 
 namespace CWT {
@@ -55,7 +56,7 @@ namespace CWT {
 			std::list<void*> unk_list_size_0x90;
 			int64_t sprite_manager;
 			SubstructWithProjectiles substruct_with_projectiles_map;
-			byte some_packet_list_struct[0x100]; // server_update_packet_lists
+			ServerUpdateSubpackets some_subpackets_list;
 			std::map<void*, void*> unk_map_0x190;
 			std::map<void*, void*> unk_map_0x1A0;
 			UnkSubstruct unk_substruct;
