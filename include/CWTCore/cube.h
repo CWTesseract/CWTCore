@@ -11,6 +11,7 @@
 #include "cube/Host.h"
 #include "cube/Item.h"
 #include "cube/ItemStack.h"
+#include "cube/Options.h"
 #include "cube/PlasmaHolder.h"
 #include "cube/ServerUpdateSubpackets.h"
 #include "cube/Speech.h"
@@ -29,6 +30,7 @@ assert_size(CWT::cube::Host, 0x630);
 assert_size(CWT::cube::Item::ItemCustomization, 0x4);
 assert_size(CWT::cube::Item, 0xA0);
 assert_size(CWT::cube::ItemStack, 0xA4);
+assert_size(CWT::cube::Options, 0x50);
 assert_size(CWT::cube::PlasmaHolder, 0x5D0);
 assert_size(CWT::cube::ServerUpdateSubpackets, 0x100);
 assert_size(CWT::cube::Speech, 0xC8);

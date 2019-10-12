@@ -5,6 +5,7 @@
 
 #include "CWTCore/cube/Client.h"
 #include "CWTCore/cube/Host.h"
+#include "CWTCore/cube/Options.h"
 #include "CWTCore/cube/PlasmaHolder.h"
 #include "CWTCore/cube/ServerUpdateSubpackets.h"
 #include "CWTCore/cube/Speech.h"
@@ -106,16 +107,7 @@ namespace CWT {
 			ServerUpdateSubpackets some_subpackets_list;
 			bool game_control_states[23];
 			bool virtual_key_states[255];
-			int64_t field_1B88;
-			int64_t field_1B90;
-			int64_t field_1B98;
-			int64_t field_1BA0;
-			int64_t field_1BA8;
-			int64_t field_1BB0;
-			int64_t field_1BB8;
-			int64_t field_1BC0;
-			int64_t field_1BC8;
-			int64_t field_1BD0;
+			Options options;
 			int64_t field_1BD8;
 			int64_t field_1BE0;
 			int64_t field_1BE8;
