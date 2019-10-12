@@ -2,12 +2,15 @@
 
 #include <cstdint>
 #include <map>
+#include <unordered_map>
 #include <list>
 #include <vector>
 #include <string>
 
 #include "CWTCore/common/Vector3.h"
 #include "CWTCore/cube/Database.h"
+#include "CWTCore/cube/ZonePosition.h"
+
 
 namespace CWT {
 	namespace cube {
@@ -43,15 +46,6 @@ namespace CWT {
 				int64_t field_40;
 				int64_t field_48;
 			};
-
-			struct ZoneHolder
-			{
-				float field_0;
-				int32_t field_4;
-				std::list<Zone*> zone_list;
-				std::vector<void*> unk_vec;
-			};
-
 
 			virtual ~World() {};
 
@@ -100,9 +94,7 @@ namespace CWT {
 			int32_t field_444;
 			Creature* local_player;
 			std::map<uint64_t, Creature*> creatures_map;
-			ZoneHolder zone_holder;
-			int64_t field_490;
-			int64_t field_498;
+			std::unordered_map<ZonePosition, Zone*> zones;
 			std::vector<void*> unk_vec_0x4A0;
 			std::vector<void*> unk_vec_0x4B8;
 			std::vector<void*> unk_vec_0x4D0;
