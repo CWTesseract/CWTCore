@@ -6,6 +6,7 @@
 #include <cstdint>
 
 #include "CWTCore/cube/EntityData.h"
+#include "CWTCore/common/msvc.h"
 
 namespace CWT {
 	namespace cube {
@@ -18,20 +19,14 @@ namespace CWT {
 		public:
 			virtual ~Client() {}
 
-			int64_t field_8;
-			int64_t field_10;
-			int32_t field_18;
-			int32_t field_1C;
+			bool some_bool;
+			msvc_Thrd_t some_thread;
 			std::list<void*> some_list_sent_as_SC_PACKET_0x0A; // Node size 0x58
 			std::list<void*> some_list_sent_as_SC_PACKET_0x0B; // Node size 0x40
 			std::list<void*> some_list_sent_as_SC_PACKET_0x0C; // Node size 0x40
 			std::list<void*> some_list_sent_as_SC_PACKET_0x0D; // Node size 0x90
 			std::list<void*> some_list_unk; // Node size 0x30
-
-			// Maybe uint64_t
-			int32_t client_steam_id; 
-			int32_t field_74;
-
+			uint64_t client_steam_id; 
 			EntityData some_entity_data;
 			uint8_t some_entity_data_newly_ctor_ed;
 			int32_t unk_timestamp_after_sending_packets;
