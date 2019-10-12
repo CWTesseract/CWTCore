@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "CWTCore/cube/Client.h"
+#include "CWTCore/cube/Controls.h"
 #include "CWTCore/cube/Host.h"
 #include "CWTCore/cube/Options.h"
 #include "CWTCore/cube/PlasmaHolder.h"
@@ -108,29 +109,7 @@ namespace CWT {
 			bool game_control_states[23];
 			bool virtual_key_states[255];
 			Options options;
-			int64_t field_1BD8;
-			int64_t field_1BE0;
-			int64_t field_1BE8;
-			int64_t field_1BF0;
-			int64_t field_1BF8;
-			int64_t field_1C00;
-			int64_t field_1C08;
-			int64_t field_1C10;
-			int64_t field_1C18;
-			int64_t field_1C20;
-			int64_t field_1C28;
-			int64_t field_1C30;
-			int64_t field_1C38;
-			int64_t field_1C40;
-			int64_t field_1C48;
-			int64_t field_1C50;
-			int64_t field_1C58;
-			int64_t field_1C60;
-			int64_t field_1C68;
-			int64_t field_1C70;
-			int64_t field_1C78;
-			int64_t field_1C80;
-			int64_t field_1C88;
+			Controls controls;
 			CRITICAL_SECTION cube_game_lock_0;
 			CRITICAL_SECTION cube_game_lock_2;
 			CRITICAL_SECTION cube_game_lock_1;

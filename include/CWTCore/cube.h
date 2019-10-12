@@ -5,6 +5,7 @@
 
 #include "cube/Client.h"
 #include "cube/Creature.h"
+#include "cube/Controls.h"
 #include "cube/EntityData.h"
 #include "cube/Field.h"
 #include "cube/Game.h"
@@ -22,6 +23,7 @@
 assert_size(CWT::cube::Client, 0xA58);
 assert_size(CWT::cube::Creature, 0x15F8);
 assert_size(CWT::cube::Creature::AnimationState, 0x8E8);
+assert_size(CWT::cube::Controls, 0xB8);
 assert_size(CWT::cube::EntityData::Appearance, 0xB0);
 assert_size(CWT::cube::EntityData, 0x970);
 assert_size(CWT::cube::Field, 0x58);
