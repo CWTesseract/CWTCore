@@ -34,7 +34,6 @@ assert_size(CWT::cube::World, 0x548);
 assert_size(CWT::cube::World::TimeInfo, 0x38);
 assert_size(CWT::cube::World::SubstructWithProjectiles, 0x18);
 assert_size(CWT::cube::World::UnkSubstruct, 0x50);
-assert_size(CWT::cube::World::ZoneHolder, 0x30);
 assert_size(CWT::cube::Zone, 0x58518);
 
 
@@ -53,7 +52,6 @@ static_assert(offsetof(CWT::cube::Game, world) == 0x8, "world");
 static_assert(offsetof(CWT::cube::Game, speech) == 0x50, "speech");
 static_assert(offsetof(CWT::cube::Game, host) == 0x6E8, "host");
 static_assert(offsetof(CWT::cube::Game, client) == 0xD18, "client");
-static_assert(offsetof(CWT::cube::Game, some_vector_like_thing) == 0x1778, "some_vector_like_thing");
 static_assert(offsetof(CWT::cube::Game, field_1790) == 0x1790, "field_1790");
 static_assert(offsetof(CWT::cube::Game, unk_packet_related_list_0) == 0x1970, "unk_packet_related_list_0");
 static_assert(offsetof(CWT::cube::Game, cube_game_lock_0) == 0x1C90, "cube_game_lock_0");
