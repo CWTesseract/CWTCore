@@ -13,6 +13,11 @@ project("CWTCore" VERSION "0.1.0")
 
 add_library (CWTCore
 	src/CWTCore.cpp
+	src/CWTCore/internal/Context.cpp
+	src/CWTCore/internal/CubeFunctions.cpp
+	src/CWTCore/internal/SigScan.cpp
+	src/CWTCore/cube/Creature.cpp
+	src/CWTCore/cube/Sprite.cpp
 )
 
 target_include_directories (CWTCore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

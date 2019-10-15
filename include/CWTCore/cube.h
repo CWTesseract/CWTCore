@@ -16,6 +16,8 @@
 #include "cube/PlasmaHolder.h"
 #include "cube/ServerUpdateSubpackets.h"
 #include "cube/Speech.h"
+#include "cube/Sprite.h"
+#include "cube/SpriteManager.h"
 #include "cube/World.h"
 #include "cube/Zone.h"
 
@@ -36,6 +38,8 @@ assert_size(CWT::cube::Options, 0x50);
 assert_size(CWT::cube::PlasmaHolder, 0x5D0);
 assert_size(CWT::cube::ServerUpdateSubpackets, 0x100);
 assert_size(CWT::cube::Speech, 0xC8);
+assert_size(CWT::cube::Sprite, 0xA8);
+assert_size(CWT::cube::SpriteManager, 0x80);
 assert_size(CWT::cube::World, 0x548);
 assert_size(CWT::cube::World::TimeInfo, 0x38);
 assert_size(CWT::cube::World::SubstructWithProjectiles, 0x18);

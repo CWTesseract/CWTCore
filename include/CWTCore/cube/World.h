@@ -17,6 +17,7 @@ namespace CWT {
 	namespace cube {
 		class Zone;
 		class Creature;
+		class SpriteManager;
 
 		class World {
 		public:
@@ -54,7 +55,7 @@ namespace CWT {
 			std::list<Creature*> creatures_list;
 			std::list<void*> unk_list_size_0x18;
 			std::list<void*> unk_list_size_0x90;
-			int64_t sprite_manager;
+			SpriteManager* sprite_manager;
 			SubstructWithProjectiles substruct_with_projectiles_map;
 			ServerUpdateSubpackets some_subpackets_list;
 			std::map<void*, void*> unk_map_0x190;

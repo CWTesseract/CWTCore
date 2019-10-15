@@ -102,13 +102,15 @@ namespace CWT {
 			};
 
 			virtual ~Creature() {};
+			Creature() = delete;
+			static Creature* New(uint64_t* guid_ptr);
 
 			int64_t guid;
 			EntityData entity_data;
 			int64_t field_980;
 			int64_t field_988;
-			int32_t field_990;
-			float some_float_1_on_damage_action;
+			float character_height_bob;
+			float on_damage_flash_effect;
 			int64_t field_998;
 			float stamina;
 			int32_t field_9A4;

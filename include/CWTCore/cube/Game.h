@@ -167,10 +167,7 @@ namespace CWT {
 			int64_t field_2058;
 			int32_t world_loaded_maybe;
 			int32_t seed;
-			int64_t world_name;
-			int64_t field_2070;
-			int64_t field_2078;
-			int64_t field_2080;
+			std::string world_name;
 			int64_t field_2088;
 			int64_t field_2090;
 			int64_t field_2098;
