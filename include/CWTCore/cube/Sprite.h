@@ -15,7 +15,8 @@ namespace CWT {
 		public:
 			virtual ~Sprite() {};
 			Sprite() = delete;
-			static Sprite* New(gfx::D3D11Graphics* gfx, uint8_t unk);
+			static Sprite* New(gfx::D3D11Graphics* gfx, uint64_t unk = 0);
+			void LoadFromFile(std::string* filepath, cube::Database* db = nullptr, uint8_t unk = 1);
 			
 			struct UnkSubstruct
 			{
