@@ -14,6 +14,7 @@
 #include "cube/FormulaDetailsWidget.h"
 #include "cube/Game.h"
 #include "cube/Host.h"
+#include "cube/InventoryWidget.h"
 #include "cube/Item.h"
 #include "cube/ItemStack.h"
 #include "cube/MapOverlayWidget.h"
@@ -41,6 +42,7 @@ assert_size(CWT::cube::Field, 0x58);
 assert_size(CWT::cube::FormulaDetailsWidget, 0x390);
 assert_size(CWT::cube::Game, 0x2280);
 assert_size(CWT::cube::Host, 0x630);
+assert_size(CWT::cube::InventoryWidget, 0x2D0);
 assert_size(CWT::cube::Item::ItemCustomization, 0x4);
 assert_size(CWT::cube::Item, 0xA0);
 assert_size(CWT::cube::ItemStack, 0xA4);
