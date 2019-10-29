@@ -4,14 +4,15 @@
 #include <map>
 
 namespace CWT {
+	namespace plasma {
+		class Node;
+		class Widget;
+	};
+
 	namespace cube {
 
 		class Game;
-
-		namespace plasma {
-			struct Node;
-			struct Widget;
-		};
+		class ChatWidget;
 
 		class PlasmaHolder
 		{
@@ -86,7 +87,7 @@ namespace CWT {
 			plasma::Widget* map_overlay_widget;
 			plasma::Widget* multiplayer_widget;
 			plasma::Widget* help_widget;
-			plasma::Widget* chat_widget;
+			cube::ChatWidget* chat_widget;
 			plasma::Node* recentlands_land_node;
 			plasma::Node* leftbutton_node;
 			plasma::Node* rightbutton_node;

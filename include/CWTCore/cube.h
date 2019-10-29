@@ -4,6 +4,8 @@
 #include "assert_size.h"
 
 #include "cube/AIObject.h"
+#include "cube/BaseWidget.h"
+#include "cube/ChatWidget.h"
 #include "cube/Client.h"
 #include "cube/Creature.h"
 #include "cube/Controls.h"
@@ -22,8 +24,9 @@
 #include "cube/World.h"
 #include "cube/Zone.h"
 
-
 assert_size(CWT::cube::AIObject, 0x150);
+assert_size(CWT::cube::BaseWidget, 0x1E8);
+assert_size(CWT::cube::ChatWidget, 0x1F0);
 assert_size(CWT::cube::Client, 0xA58);
 assert_size(CWT::cube::Creature, 0x15F8);
 assert_size(CWT::cube::Creature::AnimationState, 0x8E8);
