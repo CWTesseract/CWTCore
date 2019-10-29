@@ -41,7 +41,7 @@ assert_size(CWT::cube::Speech, 0xC8);
 assert_size(CWT::cube::Sprite, 0xA8);
 assert_size(CWT::cube::SpriteManager, 0x80);
 assert_size(CWT::cube::World, 0x548);
-assert_size(CWT::cube::World::TimeInfo, 0x38);
+assert_size(CWT::cube::World::WorldState, 0x38);
 assert_size(CWT::cube::World::SubstructWithProjectiles, 0x18);
 assert_size(CWT::cube::World::UnkSubstruct, 0x50);
 assert_size(CWT::cube::Zone, 0x58518);
