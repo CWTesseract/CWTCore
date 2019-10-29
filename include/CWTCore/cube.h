@@ -15,6 +15,8 @@
 #include "cube/Host.h"
 #include "cube/Item.h"
 #include "cube/ItemStack.h"
+#include "cube/MapOverlayWidget.h"
+#include "cube/MultiplayerWidget.h"
 #include "cube/Options.h"
 #include "cube/PlasmaHolder.h"
 #include "cube/ServerUpdateSubpackets.h"
@@ -40,6 +42,8 @@ assert_size(CWT::cube::Host, 0x630);
 assert_size(CWT::cube::Item::ItemCustomization, 0x4);
 assert_size(CWT::cube::Item, 0xA0);
 assert_size(CWT::cube::ItemStack, 0xA4);
+assert_size(CWT::cube::MapOverlayWidget, 0x260);
+assert_size(CWT::cube::MultiplayerWidget, 0x2F8);
 assert_size(CWT::cube::Options, 0x50);
 assert_size(CWT::cube::PlasmaHolder, 0x5D0);
 assert_size(CWT::cube::ServerUpdateSubpackets, 0x100);
