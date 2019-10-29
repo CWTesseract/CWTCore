@@ -22,6 +22,7 @@
 #include "cube/Sprite.h"
 #include "cube/SpriteManager.h"
 #include "cube/World.h"
+#include "cube/WorldMap.h"
 #include "cube/Zone.h"
 
 assert_size(CWT::cube::AIObject, 0x150);
@@ -49,6 +50,7 @@ assert_size(CWT::cube::World, 0x548);
 assert_size(CWT::cube::World::WorldState, 0x38);
 assert_size(CWT::cube::World::AIManager, 0x18);
 assert_size(CWT::cube::World::UnkSubstruct, 0x50);
+assert_size(CWT::cube::WorldMap, 0x1F0);
 assert_size(CWT::cube::Zone, 0x58518);
 
 
