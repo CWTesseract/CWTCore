@@ -22,6 +22,10 @@ namespace CWT {
 				uint8_t field_5;
 				uint8_t field_6;
 				uint8_t field_7;
+
+				// 0x4000000 == possessed
+				// 0x40 == Job/class trainer?
+				// 0x8000 == is neutral creature
 				int32_t movement_flags;
 				float graphical_size;
 				float hitbox_size;
