@@ -14,7 +14,7 @@ namespace CWT {
 		class Game;
 		class ChatWidget;
 
-		class PlasmaHolder
+		class GUI
 		{
 		public:
 			plasma::Node* start_screen_node;

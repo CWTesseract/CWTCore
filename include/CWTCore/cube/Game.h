@@ -7,7 +7,7 @@
 #include "CWTCore/cube/Controls.h"
 #include "CWTCore/cube/Host.h"
 #include "CWTCore/cube/Options.h"
-#include "CWTCore/cube/PlasmaHolder.h"
+#include "CWTCore/cube/GUI.h"
 #include "CWTCore/cube/ServerUpdateSubpackets.h"
 #include "CWTCore/cube/Speech.h"
 
@@ -44,7 +44,7 @@ namespace CWT {
 			void* XAudio2_engine;
 			KeyInfoMaps key_info_maps;
 			Speech speech;
-			PlasmaHolder plasma_holder;
+			GUI gui;
 			Host host;
 			Client client;
 			int64_t field_1770;

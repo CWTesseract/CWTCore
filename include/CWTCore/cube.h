@@ -20,7 +20,7 @@
 #include "cube/MapOverlayWidget.h"
 #include "cube/MultiplayerWidget.h"
 #include "cube/Options.h"
-#include "cube/PlasmaHolder.h"
+#include "cube/GUI.h"
 #include "cube/ServerUpdateSubpackets.h"
 #include "cube/Speech.h"
 #include "cube/Sprite.h"
@@ -49,7 +49,7 @@ assert_size(CWT::cube::ItemStack, 0xA4);
 assert_size(CWT::cube::MapOverlayWidget, 0x260);
 assert_size(CWT::cube::MultiplayerWidget, 0x2F8);
 assert_size(CWT::cube::Options, 0x50);
-assert_size(CWT::cube::PlasmaHolder, 0x5D0);
+assert_size(CWT::cube::GUI, 0x5D0);
 assert_size(CWT::cube::ServerUpdateSubpackets, 0x100);
 assert_size(CWT::cube::Speech, 0xC8);
 assert_size(CWT::cube::Sprite, 0xA8);
