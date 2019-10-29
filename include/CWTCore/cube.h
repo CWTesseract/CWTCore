@@ -61,17 +61,9 @@ assert_size(CWT::cube::World::UnkSubstruct, 0x50);
 assert_size(CWT::cube::WorldMap, 0x1F0);
 assert_size(CWT::cube::Zone, 0x58518);
 
-
 static_assert(offsetof(CWT::cube::Creature::AnimationState, field_50) == 0x50, "field_50");
 static_assert(offsetof(CWT::cube::Creature::AnimationState, neck_sprite) == 0x130, "neck_sprite");
 static_assert(offsetof(CWT::cube::Creature::AnimationState, field_8B8) == 0x8B8, "field_8B8");
-
-//template<int s> struct GetSize;
-//GetSize<sizeof(CWT::cube::Creature)> size;
-//assert_size(CWT::cube::Creature, 0x15F8);
-
-
-
 
 static_assert(offsetof(CWT::cube::Game, world) == 0x8, "world");
 static_assert(offsetof(CWT::cube::Game, speech) == 0x50, "speech");
@@ -80,4 +72,6 @@ static_assert(offsetof(CWT::cube::Game, client) == 0xD18, "client");
 static_assert(offsetof(CWT::cube::Game, some_subpackets_list) == 0x1970, "some_subpackets_list");
 static_assert(offsetof(CWT::cube::Game, cube_game_lock_0) == 0x1C90, "cube_game_lock_0");
 
-
+//template<int s> struct GetSize;
+//GetSize<sizeof(CWT::cube::Creature)> size;
+//assert_size(CWT::cube::Creature, 0x15F8);
