@@ -62,7 +62,6 @@ static_assert(offsetof(CWT::cube::Game, world) == 0x8, "world");
 static_assert(offsetof(CWT::cube::Game, speech) == 0x50, "speech");
 static_assert(offsetof(CWT::cube::Game, host) == 0x6E8, "host");
 static_assert(offsetof(CWT::cube::Game, client) == 0xD18, "client");
-static_assert(offsetof(CWT::cube::Game, field_1790) == 0x1790, "field_1790");
 static_assert(offsetof(CWT::cube::Game, some_subpackets_list) == 0x1970, "some_subpackets_list");
 static_assert(offsetof(CWT::cube::Game, cube_game_lock_0) == 0x1C90, "cube_game_lock_0");
 
