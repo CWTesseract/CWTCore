@@ -31,10 +31,10 @@ namespace CWT {
 				std::map<void*, void*> some_map_size_0x28_1; // dropped rewards.
 			};
 
-			struct SubstructWithProjectiles
+			struct AIManager
 			{
 				World* world;
-				std::map<void*, void*> unk_map; // Related to projectiles, not sure about the data-types.
+				std::map<int64_t, AIObject> ai_objs;
 			};
 
 			struct UnkSubstruct
@@ -56,7 +56,7 @@ namespace CWT {
 			std::list<void*> unk_list_size_0x18;
 			std::list<void*> unk_list_size_0x90; // Actual `cube::Projecile`s. Fireballs, arrows, shuriken, etc.
 			SpriteManager* sprite_manager;
-			SubstructWithProjectiles substruct_with_projectiles_map;
+			AIManager ai_manager;
 			ServerUpdateSubpackets some_subpackets_list;
 			std::map<void*, void*> unk_map_0x190;
 			std::map<void*, void*> unk_map_0x1A0;

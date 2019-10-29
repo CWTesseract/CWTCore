@@ -3,6 +3,7 @@
 #include <vector>
 #include "assert_size.h"
 
+#include "cube/AIObject.h"
 #include "cube/Client.h"
 #include "cube/Creature.h"
 #include "cube/Controls.h"
@@ -22,6 +23,7 @@
 #include "cube/Zone.h"
 
 
+assert_size(CWT::cube::AIObject, 0x150);
 assert_size(CWT::cube::Client, 0xA58);
 assert_size(CWT::cube::Creature, 0x15F8);
 assert_size(CWT::cube::Creature::AnimationState, 0x8E8);
@@ -42,7 +44,7 @@ assert_size(CWT::cube::Sprite, 0xA8);
 assert_size(CWT::cube::SpriteManager, 0x80);
 assert_size(CWT::cube::World, 0x548);
 assert_size(CWT::cube::World::WorldState, 0x38);
-assert_size(CWT::cube::World::SubstructWithProjectiles, 0x18);
+assert_size(CWT::cube::World::AIManager, 0x18);
 assert_size(CWT::cube::World::UnkSubstruct, 0x50);
 assert_size(CWT::cube::Zone, 0x58518);
 
