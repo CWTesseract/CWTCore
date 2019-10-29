@@ -101,14 +101,22 @@ namespace CWT {
 				int64_t field_8E0;
 			};
 
+			struct Buff {
+				uint32_t buff_id;
+				float unk;
+				float time_remaining;
+				int32_t field_10;
+				int32_t field_14;
+				int32_t field_18;
+			};
+
 			virtual ~Creature() {};
 			Creature() = delete;
 			static Creature* New(uint64_t* guid_ptr);
 
 			int64_t guid;
 			EntityData entity_data;
-			int64_t field_980;
-			int64_t field_988;
+			std::list<Buff> buffs;
 			float character_height_bob;
 			float on_damage_flash_effect;
 			int64_t field_998;
