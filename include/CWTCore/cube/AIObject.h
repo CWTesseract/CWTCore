@@ -7,8 +7,6 @@ namespace CWT {
 	namespace cube {
 		class AIObject {
 		public:
-			// Chris, stop copying my code without any credit.
-			// You're violating the MIT license. >:(
 			float field_0;
 			int32_t some_time_ms;
 			int32_t field_8;
