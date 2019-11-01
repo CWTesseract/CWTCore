@@ -134,7 +134,7 @@ namespace CWT {
 			int32_t world_loaded_maybe;
 			int32_t seed;
 			std::string world_name;
-			std::list<void*> unk_list_0x2088;
+			std::list<void*> particles_list;
 			std::list<void*> unk_list_0x2098;
 			std::list<void*> some_list_related_to_su_packet_10_and_FEATs; // Sounds to play?
 			int64_t field_20B8;
