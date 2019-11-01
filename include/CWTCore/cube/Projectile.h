@@ -8,6 +8,21 @@ namespace CWT {
 		class Projectile
 		{
 		public:
+			enum ProjectileType : int32_t {
+				Arrow = 0,
+				Bullet = 1,
+				Shuriken = 2,
+				unk3 = 3,
+				Fireball = 4,
+				ArrowOrBoomerang = 5, // Boomerang if the projectile's GUID is valid creature and said creature has a boomerang equipped in the right weapon slot.
+				unk6 = 6,
+				IronDeposit = 7,
+				Eagle = 8,
+				Airship = 9,
+				Medicine = 10,
+			};
+
+
 			Projectile() {
 				guid = (uint64_t)-1;
 				some_size_in_blocks = 1.0;
@@ -30,7 +45,7 @@ namespace CWT {
 			float some_scalar_1;
 			int32_t field_60;
 			uint8_t field_64;
-			int32_t projectile_type;
+			ProjectileType projectile_type;
 			uint8_t field_6C;
 			float current_time_ms_float;
 			int32_t max_time_to_live_ms_int;
