@@ -55,7 +55,7 @@ namespace CWT {
 			WorldState world_state;
 			std::list<Creature*> creatures_list;
 			std::list<Creature*> unk_creature_list_size_0x18;
-			std::list<Projectile*> projectiles; // Actual `cube::Projecile`s. Fireballs, arrows, shuriken, etc.
+			std::list<Projectile> projectiles; // Fireballs, arrows, shuriken, iron ore, airships, eagles, etc.
 			SpriteManager* sprite_manager;
 			AIManager ai_manager;
 			ServerUpdateSubpackets some_subpackets_list;
