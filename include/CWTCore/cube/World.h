@@ -18,6 +18,7 @@ namespace CWT {
 		class Zone;
 		class Creature;
 		class SpriteManager;
+		class Projectile;
 
 		class World {
 		public:
@@ -53,8 +54,8 @@ namespace CWT {
 
 			WorldState world_state;
 			std::list<Creature*> creatures_list;
-			std::list<void*> unk_list_size_0x18;
-			std::list<void*> unk_list_size_0x90; // Actual `cube::Projecile`s. Fireballs, arrows, shuriken, etc.
+			std::list<Creature*> unk_creature_list_size_0x18;
+			std::list<Projectile*> projectiles; // Actual `cube::Projecile`s. Fireballs, arrows, shuriken, etc.
 			SpriteManager* sprite_manager;
 			AIManager ai_manager;
 			ServerUpdateSubpackets some_subpackets_list;
